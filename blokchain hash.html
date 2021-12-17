@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://andersbrownworth.com/blockchain/hash -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" 
+     content="width=device-width, initial-scale=1"><meta name="description" 
+content="A live blockchain demo in a browser."><meta name="author" 
+                      content="Anders Brownworth"><link rel="icon" 
+    href="https://andersbrownworth.com/favicon.ico"><title>Blockchain Demo</title><link rel="stylesheet" 
+href="./blokchain hash_files/bootstrap.min.css"><link rel="stylesheet" 
+  href="./blokchain hash_files/bootstrap-theme.min.css"><link rel="stylesheet" 
+   href="./blokchain hash_files/bootstrap-horizon.css"><link rel="stylesheet" 
+href="./blokchain hash_files/ladda-themeless.min.css"><link rel="stylesheet" 
+ href="./blokchain hash_files/ie10-viewport-bug-workaround.css"><link rel="stylesheet" 
+href="./blokchain hash_files/blockchain.css"><script src="./blokchain hash_files/jquery.min.js.indir">
+     </script><script src="./blokchain hash_files/bootstrap.min.js.indir"></script>
+    <script src="./blokchain hash_files/spin.min.js.indir"></script>
+    <style type="text/css"></style><script src="./blokchain hash_files/ladda.min.js.indir"></script>
+    <script src="./blokchain hash_files/ie10-viewport-bug-workaround.js.indir"></script>
+    <script src="./blokchain hash_files/sha256.js.indir"></script><script src="./blokchain hash_files/blockchain.js.indir"></script>
+ </head>
+
+
+
+<body>
+
+     </nav><div class="container"><h1>SHA256 Hash</h1><div class="well" id="well1">
+    <form class="form-horizontal"><div class="form-group"><label class="col-sm-2 control-label" for="data">Data:</label><div class="col-sm-10"><textarea class="form-control" id="data" rows="10" onkeyup="$(&quot;#hash&quot;).val(sha256())"></textarea></div></div>
+    <div class="form-group"><label class="col-sm-2 control-label" for="hash">Hash:</label><div class="col-sm-10"><input class="form-control" id="hash" type="text" disabled=""></div></div></form></div></div><script>function getText(block, chain) {
+  return $('#data').val();
+}
+
+$("#hash").val(sha256());</script></body></html>

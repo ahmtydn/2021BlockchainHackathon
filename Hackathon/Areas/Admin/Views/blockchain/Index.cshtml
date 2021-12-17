@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_clientside.cshtml";
+}
+
+<style>
+    .custom-navbar {
+        margin-bottom: 0;
+        background-color: #1018f2;
+        padding: 20 px 0;
+    }
+</style>
+
+<section id="about" class="parallax-section">
+    <div class="container">
+
+        <h1>SHA256 Hash</h1><div class="well" id="well1">
+            <form class="form-horizontal">
+                <div class="form-group"><label class="col-sm-2 control-label" for="data">Data:</label><div class="col-sm-10"><textarea class="form-control" id="data" rows="10" onkeyup="$(&quot;#hash&quot;).val(sha256())"></textarea></div></div>
+                <div class="form-group"><label class="col-sm-2 control-label" for="hash">Hash:</label><div class="col-sm-10"><input class="form-control" id="hash" type="text" disabled=""></div></div>
+            </form>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<script>
+    //function getText(block, chain) {
+    //    return $('#data').val();
+    //}
+
+    //$("#hash").val(sha256());
+</script>

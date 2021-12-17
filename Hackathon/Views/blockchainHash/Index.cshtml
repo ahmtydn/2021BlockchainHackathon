@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_clientside.cshtml";
+}
+@{
+    ViewBag.Title = "Hash";
+}
+
+<style>
+    .custom-navbar {
+        margin-bottom: 0;
+        background-color: #1018f2;
+        padding: 20 px 0;
+    }
+
+    #block1chain1well {
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+</style>
+<!-- NAVBAR HEADER -->
+
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- NAVBAR HEADER -->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <!-- lOGO -->
+            <a href="@Url.Action("Index","Home")" class="navbar-brand">Ana Sayfa</a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="~/blockchainHash" class="smoothScroll">Hash</a></li>
+                <li><a href="~/block/" class="smoothScroll">Block</a></li>
+                <li><a href="~/blockchain" class="smoothScroll">Blockchain</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<section id="about" class="parallax-section">
+    <div class="container">
+
+        <h1>SHA256 Hash</h1><div class="well" id="well1">
+            <form class="form-horizontal">
+                <div class="form-group"><label class="col-sm-2 control-label" for="data">Data:</label><div class="col-sm-10"><textarea class="form-control" id="data" rows="10" onkeyup="$(&quot;#hash&quot;).val(sha256())"></textarea></div></div>
+                <div class="form-group"><label class="col-sm-2 control-label" for="hash">Hash:</label><div class="col-sm-10"><input class="form-control" id="hash" type="text" disabled=""></div></div>
+            </form>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<script>
+        //function getText(block, chain) {
+        //    return $('#data').val();
+        //}
+
+        //$("#hash").val(sha256());
+</script>
+<footer style="padding-bottom:10px;">
+    <hr />
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5 col-sm-6">
+                <h2>zexly</h2>
+                <p>zexly,<br> Tristique vestibulum,<br> Lorem ipsum dolor</p>
+
+
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="footer-info">
+                    <h2>İletişim</h2>
+                    <p><a href="tel:05372505632">05372505632</a></p>
+                    <p><a href="mailto:ahmttyydn@gmail.com">ahmttyydn@gmail.com</a></p>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+
+                <h2>Hakkında</h2>
+                <p>
+                    Önümüzdeki on yıl içinde, internetin finansal sisteminin, diğer bir deyişle,
+                    internet üzerinden gerçekleşen ticaretin, dünyadaki en büyük finansal sistem olacağına inanıyoruz.
+                    Bu sistemin arkasındaki güç ise kripto olacak.
+                </p>
+
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12 col-sm-12">
+                <div class="copyright-text">
+                    <p>
+                        Copyright © 2021 BKham
+
+                        | Design: byZexly
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
