@@ -184,6 +184,7 @@
     <Content Include="js\modernizr.custom.js" />
     <Content Include="js\owl.carousel.min.js" />
     <Content Include="js\smoothscroll.js" />
+    <Content Include="menucss\style555.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\fontawesome-webfont.eot" />
